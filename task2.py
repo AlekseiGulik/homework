@@ -45,3 +45,5 @@ print(type(y))
 # Преобразуйте False в строку
 f = str(False)
 print(type(f))
+
+#git test 2
