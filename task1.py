@@ -11,3 +11,5 @@ word = "word"
 empty = None
 # Вывести их типы. 123
 print( type(number), type(digit), type(boolean), type(word), type(None) )
+
+#git test
