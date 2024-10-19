@@ -13,6 +13,7 @@
 # Explicit is better than implicit.
 # Beautiful is better than ugly.
 
+
 f = open('import_this.txt', 'w')
 f.write("Beautiful is better than ugly.\n")
 f.write("Explicit is better than implicit.\n")
@@ -25,3 +26,16 @@ lines.reverse()
 for line in lines:
         print(line, end='')
 f.close()
+
+f = open('import_this.txt', 'w+')
+f.write(
+    "Beautiful is better than ugly.\n"
+    "Explicit is better than implicit.\n"
+    "Simple is better than complex.\n"
+    "Complex is better than complicated.\n")
+f.seek(0)
+s = f.readlines()
+f.close()
+s.reverse()
+print(''.join(s).strip('\n'))
+
